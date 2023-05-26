@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 from process_dataset import *
 
-
+#Memanggil semua variabel dataset yang diperlukan
+load()
+df_nama = df_nama
 
 #Header Aplikasi
 st.title('Aplikasi Cek Nilai Apollo Class')
@@ -11,9 +13,6 @@ st.caption('Batch 4 - Power Academy')
 st.text("\n")
 st.text("\n")
 
-#Memanggil semua variabel dataset yang diperlukan
-load()
-df_nama = df_nama
 
 # Memulai Inputan Data
 #Inputan Nama
