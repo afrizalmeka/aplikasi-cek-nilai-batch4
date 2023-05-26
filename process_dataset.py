@@ -42,20 +42,20 @@ def load():
     df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
     df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
 
-    #mencari nilai avg pada python
-    df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
-    df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
-    df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
+    # #mencari nilai avg pada python
+    # df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
+    # df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
+    # df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
 
-    #mencari nilai avg pada siklus
-    df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
-    df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
-    df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
+    # #mencari nilai avg pada siklus
+    # df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
+    # df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
+    # df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
 
-    #mencari nilai avg pada intro to ml
-    df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
-    df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
-    df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
+    # #mencari nilai avg pada intro to ml
+    # df_avg_tugas_intro_ai = df.iloc[:,4:9].sum(axis=1)
+    # df_avg_tugas_intro_ai = df_avg_tugas_intro_ai / apollo_banyak_tugas_intro_ai
+    # df.insert(9, 'avg_tugas_intro', df_avg_tugas_intro_ai)
 
     #menentukan ukuran baris, sebagai penentu kapan berhenti dari loops
     size = df.shape
