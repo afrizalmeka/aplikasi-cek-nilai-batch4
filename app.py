@@ -2,9 +2,12 @@ import streamlit as st
 import pandas as pd
 from process_dataset import *
 
-#Memanggil semua variabel dataset yang diperlukan
-load()
-df_nama = df_nama
+# #Memanggil semua variabel dataset yang diperlukan
+# load()
+# df_nama = df_nama
+
+process = load_dataset()
+df, df_nama, size = process.kirim_data_dataset()
 
 #Header Aplikasi
 st.title('Aplikasi Cek Nilai Apollo Class')
